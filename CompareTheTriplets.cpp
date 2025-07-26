@@ -16,7 +16,8 @@ vector<string> split(const string &);
  */
 
 
-vector<int> compareTriplets(vector<int> a, vector<int> b) {
+vector<int> compareTriplets(vector<int> a, vector<int> b)
+{
     int alicePoints = 0, bobPoints = 0;
 
     for (int i = 0; i < 3; i++) {
