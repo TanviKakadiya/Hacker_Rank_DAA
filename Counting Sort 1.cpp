@@ -14,17 +14,18 @@ vector<string> split(const string &);
  */
 
 vector<int> countingSort(vector<int> arr) {
-    // Create a frequency array of size 100 (0 to 99)
+    // Step 1: Create a frequency array of size 100 initialized to 0
     vector<int> freq(100, 0);
-    
-    // Count occurrences of each number
+
+    // Step 2: Count the occurrences of each number
     for (int num : arr) {
         freq[num]++;
     }
-    
-    // Return the frequency array
+
+    // Step 3: Return the frequency array
     return freq;
 }
+
 
 int main()
 {
